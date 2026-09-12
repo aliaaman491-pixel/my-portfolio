@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
 </head>
 <body>
 
     <h2>Contact Form</h2>
 
+    <!-- Form Section -->
     <form>
       <label>Full Name:</label><br>
       <input type="text" placeholder="Amina Khan" required><br><br>
@@ -14,8 +16,50 @@
       <label>Email Address:</label><br>
       <input type="email" placeholder="name@mail.com" required><br><br>
 
+      <label>Subject:</label><br>
+      <select name="subject">
+        <option value="general">General Inquiry</option>
+        <option value="support">Support</option>
+        <option value="feedback">Feedback</option>
+      </select><br><br>
+
+      <input type="checkbox" id="subscribe" name="subscribe">
+      <label for="subscribe">Subscribe to updates</label><br><br>
+
       <button type="submit">Submit</button>
     </form>
+
+    <hr>
+
+    <!-- Table Section -->
+    <h2>Skill Set Table</h2>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Skill</th>
+          <th>Experience</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Amina</td>
+          <td>HTML/CSS</td>
+          <td>1 Month</td>
+        </tr>
+        <tr>
+          <td>Fatima</td>
+          <td>Git & GitHub</td>
+          <td>2 Weeks</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total Students: 2</td>
+        </tr>
+      </tfoot>
+    </table>
 
 </body>
 </html>
