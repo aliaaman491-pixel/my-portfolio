@@ -1,66 +1,82 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Hira | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <h2>Contact Form</h2>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Portfolio.</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Form Section -->
-    <form>
-      <label>Full Name:</label><br>
-      <input type="text" placeholder="Amina Khan" required><br><br>
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h3>Hello, I'm</h3>
+                <h1>Hira</h1>
+                <h2>Front-End Web Developer</h2>
+                <p>I build modern, responsive, and interactive web applications.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
 
-      <label>Email Address:</label><br>
-      <input type="email" placeholder="name@mail.com" required><br><br>
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <p>I am a passionate Web Developer with expertise in building clean, responsive user interfaces.</p>
+            </div>
+        </section>
 
-      <label>Subject:</label><br>
-      <select name="subject">
-        <option value="general">General Inquiry</option>
-        <option value="support">Support</option>
-        <option value="feedback">Feedback</option>
-      </select><br><br>
+        <section id="skills" class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+                <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+                <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                <div class="skill-card"><i class="fa-brands fa-github"></i><span>Git & GitHub</span></div>
+            </div>
+        </section>
 
-      <input type="checkbox" id="subscribe" name="subscribe">
-      <label for="subscribe">Subscribe to updates</label><br><br>
+        <section id="projects" class="section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Snapchat Web Application</h3>
+                    <p>Webcam integration, live camera filters, and chat interface.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/aliaaman491-pixel/my-portfolio" target="_blank">Code</a>
+                        <a href="https://aliaaman491-pixel.github.io/my-portfolio/" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <button type="submit">Submit</button>
-    </form>
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact Me</h2>
+            <form id="contactForm" class="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
 
-    <hr>
-
-    <!-- Table Section -->
-    <h2>Skill Set Table</h2>
-
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Skill</th>
-          <th>Experience</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Amina</td>
-          <td>HTML/CSS</td>
-          <td>1 Month</td>
-        </tr>
-        <tr>
-          <td>Fatima</td>
-          <td>Git & GitHub</td>
-          <td>2 Weeks</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="3">Total Students: 2</td>
-        </tr>
-      </tfoot>
-    </table>
-
+    <script src="script.js"></script>
 </body>
 </html>
